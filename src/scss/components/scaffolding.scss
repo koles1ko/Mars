@@ -27,7 +27,7 @@ li {
   list-style: none;
 }
 // body {
-//   font-family: ;
+//   font-family: 'Montserrat', ;
 //   font-weight: ;
 //   font-size: ;
 //   line-height: ;
@@ -44,8 +44,8 @@ li {
 .footer {
   flex: 0 0 auto;
 }
-// .container {
-//   max-width: ;
-//   margin: 0 auto;
-//   padding: ;
-// }
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
