@@ -19,6 +19,7 @@ h1,h2,h3,h4,h5,h6{
 a {
   display: inline-block;
   text-decoration: none;
+  color: #000
 }
 ul,
 li {
@@ -26,13 +27,15 @@ li {
   padding: 0;
   list-style: none;
 }
-// body {
-//   font-family: 'Montserrat', ;
-//   font-weight: ;
-//   font-size: ;
+body {
+  font-family: 'Montserrat', ;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #eff2f6;
+  color: $grey
 //   line-height: ;
 //   color: ;
-// }
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -48,4 +51,22 @@ li {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.logo{
+  text-transform: uppercase;
+  font-weight: 700;
+  flex: 24px;
+  color: #000;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: -7px;
+    right: -12px;
+    width: 11px;
+    height: 11px;
+    border: 3px solid #ff343d;
+    border-radius: 50%;
+  }
 }

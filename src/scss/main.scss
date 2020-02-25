@@ -5,3 +5,159 @@
 @import 'components/mixins.scss';
 @import 'components/fonts.scss';
 @import 'components/scaffolding.scss';
+
+
+header{
+  position: absolute;
+  top: 65px;
+  left: 50%;  
+  transform: translate(-50%);
+  max-width: 1630px;
+  width: 100%;
+  padding: 0 15px;
+  z-index: 50;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  &__logo{
+    margin-right: 70px;
+  }
+  &__phone{
+     
+  }
+  &__phone{
+    position: relative;
+    color: $grey;
+    padding-left: 20px;
+    font-weight: 400;
+    &:before{
+      display: block;
+      position: absolute;
+      content: "\e942";
+      font-family: 'icomoon';
+      display: block;
+      width: 12px;
+      height: 12px;
+      left: 0;
+      top: 2px;
+      font-size: 12px;
+    }
+  }
+  &-right{
+    display: flex;
+    .buy-now{
+      color: #fff;
+      padding-bottom: 2px;
+      border-bottom: 1px solid rgba(#ffffff, .3);
+    }
+  }
+  .burger{
+    margin-left: 38px;
+    div{
+      width: 24px;
+      height: 2px;
+      background-color: #fff;
+      & + div{
+        margin-top: 3px;
+      }
+    }
+  }
+  &__menu{
+    display: none;
+  }
+}
+.intro{
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  &__dron{
+    position: absolute;
+    display: none;
+  }
+  &__slider{
+    width: 62%;
+    display: flex !important;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &-item{
+      margin: 0 auto;
+      max-width: 392px;
+
+      h3{
+        font-size: 60px;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 48px;
+      }
+    }
+    .slick-dots{
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      li{
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        & + li{
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  &__logo{
+    background: $red url("../img/MARSlogo.png") no-repeat right -50px;
+    width: 38%;
+    height: 100%;
+  }
+  .scroll-down{
+    position: absolute;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'components/media.scss';

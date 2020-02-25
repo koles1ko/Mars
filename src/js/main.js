@@ -3,6 +3,15 @@ console.log(divide(34, 2));
 
 $(function () {
 
+  // $('.intro__slider').slick({
+  //   dots: true,
+  //   arrows: false,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   infinite: false,
+  //   vertical: true,
+  //   verticalSwiping: true
+  // });
 
   //  $(".test").on('click', function(){
   //    $(".test").toggleClass(".active");
