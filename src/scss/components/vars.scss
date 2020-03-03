@@ -1,5 +1,11 @@
 $imgFolder: '../img/'; // путь к изображениям
 $fontsFolder: '../fonts/'; // путь к шрифтам
 
+@mixin back{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 $red: #ff343d;
 $grey: #98a6aa; 
