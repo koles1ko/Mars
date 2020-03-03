@@ -47,9 +47,10 @@ header{
   &-right{
     display: flex;
     .buy-now{
-      color: #fff;
+      position: relative;
       padding-bottom: 2px;
       border-bottom: 1px solid rgba(#ffffff, .3);
+      color: #fff;
     }
   }
   .burger{
@@ -69,19 +70,45 @@ header{
 }
 .intro{
   height: 100vh;
-  overflow-y: hidden;
+  width: 100%;
   display: flex;
-  &__dron{
+  &-right{
+    background: $red url("../img/MARSlogo.png") no-repeat right -50px;
+    width: 38%;
+    height: 100%;
+  }
+  &-left{
+    width: 62%;
+    height: 100%;
+  }
+  &__wrapper{
     position: absolute;
-    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
   }
   &__tabs{
     display: flex;
     align-items: center;
-    // margin-top: 300px;
     .tabs{
       margin-right: 50px;
       margin-left: 37px;
+    }
+    .tab{
+      width: 7px;
+      height: 7px;
+      background-color: #aaa;
+      border: none;
+      border-radius: 50%;
+      transition: .4s;
+      & + .tab{
+        margin-top: 18px;
+      }
+      &.active{
+        background-color: $red;
+      }
     }
     .tab__content{
       position: relative;
@@ -97,9 +124,9 @@ header{
       width: 405px;
       position: absolute;
       &:nth-child(1){top: 0;}
-      &:nth-child(2){top: 160px;}
-      &:nth-child(3){top: 320px;}
-      &:nth-child(4){top: 480px;}
+      &:nth-child(2){top: 158px;}
+      &:nth-child(3){top: 316px;}
+      &:nth-child(4){top: 414px;}
       &.active-tab{
         opacity: 1;
       }
@@ -119,30 +146,25 @@ header{
       display: block;
     }
   }
-  &__logo{
-    background: $red url("../img/MARSlogo.png") no-repeat right -50px;
-    width: 38%;
-    height: 100%;
-  }
-  .scroll-down{
-    position: absolute;
-  }
-}
-.tab{
-  width: 7px;
-  height: 7px;
-  background-color: #aaa;
-  border: none;
-  border-radius: 50%;
-  transition: .4s;
-  & + .tab{
-    margin-top: 18px;
-  }
-  &.active{
-    background-color: $red;
-  }
-}
+  &__dron{
+    padding-top: 40px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content:"";
+      display: block;
+      top: 0;
+      left: 50%;
+      transform: translatex(-50%);
+      width: 650px;
+      height: 650px;
+      border-radius: 50%;
+      background-color: #fff;
 
+      z-index: -1;
+    }
+  }
+}
 
 
 
