@@ -183,28 +183,66 @@ header{
 }
 
 .features{
+  position: relative;
   &-top{
     display: flex;
     min-height: 615px;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    max-width: 2000px;
+    top: 0;
+    left: 0;
+    z-index: -1;
     &_left{
       width: 30%;
-      background-image: url(../img/feat/feat-top.jpg);
+      background-image: url(../img/feat/feat-circle.png);
       @include back;
+      display: flex;
+      align-items: center;
+      .features-top__content{
+        max-width: 400px;
+        width: 100%;
+        min-height: 115px;
+        margin-right: 0;
+        margin-left: auto;
+        h3{
+          font-weight: 700;
+          font-size: 60px;
+          color: #000;
+        }
+        div{
+          font-size: 14px;
+          color: $grey;
+          margin-top: 10px;
+          font-weight: 400;
+        }
+      }
     }
     &_right{
       width: 70%;
       background-image: url(../img/feat/feat-map.png);
       @include back;
+      overflow-x: hidden;
+      &:hover{
+        .slide{transform: translateX(0)}
+      }
+      .slide{
+        max-width: 617px;
+        width: 100%;
+        min-height: 615px;
+        background-color: rgba(#000, .65);
+        transform: translateX(-617px);
+        transition: .4s
+      }
     }
+    
   }
 }
 
+ 
 
-//  <div>Tap to fly</div>
-//                 <div>Lorem ipsum dolor sit amet.</div>
 
-// <a href="#" class="dft-btn features-top_right__link">VIEW MORE</a>
+
 
 
 
