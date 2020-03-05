@@ -1067,6 +1067,8 @@ header {
     width: 200px; }
     .intro__tabs .tab-item h3 {
       font-size: 40px; }
+  .intro .scroll-down {
+    left: -60px; }
   .features-top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
@@ -1099,7 +1101,7 @@ header {
       font-size: 80px;
       top: 80px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 385px) {
   .header__logo {
     margin-bottom: 15px; }
   .header-right {
