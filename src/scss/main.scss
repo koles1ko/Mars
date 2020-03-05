@@ -103,6 +103,7 @@ header{
   height: 100vh;
   width: 100%;
   display: flex;
+  position: relative;
   &-right{
     background: $red url("../img/MARSlogo.png") no-repeat right -50px;
     width: 38%;
@@ -123,7 +124,7 @@ header{
   &__tabs{
     display: flex;
     align-items: center;
-    position: relative;
+    // position: relative;
     .tabs{
       margin-right: 50px;
       margin-left: 37px;
@@ -144,7 +145,7 @@ header{
     }
     .tab__content{
       position: relative;
-      min-height: 650px;
+      min-height: 550px;
       max-width: 500px;
       width: 100%;
     }
@@ -203,7 +204,7 @@ header{
   }
   .scroll-down{
     position: absolute;
-    bottom: 0;
+    bottom: 120px;
     left: -30px;
     transform: rotate(-90deg) !important;
     width: 150px;
@@ -214,7 +215,6 @@ header{
     }
   }
 }
-
 .features{
   position: relative;
   &-top{
@@ -235,6 +235,7 @@ header{
         min-height: 115px;
         margin-right: 0;
         margin-left: auto;
+        text-align: left;
         div{
           a{
             font-weight: 700;
@@ -295,7 +296,7 @@ header{
       width: 1px;
       background-color: #fff;
       bottom: 0;
-      right: 90px;
+      right: 93px;
     }
   }
   &-bottom{
@@ -312,6 +313,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
+    flex-wrap: wrap;
   }
   &__item{
     img{
