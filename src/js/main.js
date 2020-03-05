@@ -12,15 +12,20 @@ $(function () {
     return false;
   }); 
 
-  // $('.intro__slider').slick({
-  //   dots: true,
-  //   arrows: false,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   infinite: false,
-  //   vertical: true,
-  //   verticalSwiping: true
-  // });
+  $("#yak-1").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+
+  $("#yak-2").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+
 
   //  $(".test").on('click', function(){
   //    $(".test").toggleClass(".active");
@@ -75,5 +80,12 @@ $(function () {
   // }); 
   //Для табов!
 
+  // $("#menu").on("click", "a", function (event) {
+  //   event.preventDefault();
+  //   var id = $(this).attr('href'),
+  //     top = $(id).offset().top;
+  //   $('body,html').animate({ scrollTop: top }, 1500);
+  // });
+  // якоря
   //----------------------------------
 });
